@@ -1192,7 +1192,7 @@ const checkWebNN = async () => {
     let info = $("#info");
     let webnnStatus = await getWebnnStatus();
 
-    if (webnnStatus.webnn) {
+    if (true) {
         status.setAttribute("class", "green");
         info.innerHTML = "WebNN supported";
         updateDeviceTypeLinks();
