@@ -548,7 +548,7 @@ const ui = async () => {
         title.innerHTML = "WebGPU";
         await main();
     } else {
-        if (true) {
+        if (webnnStatus.webnn) {
             status.setAttribute("class", "green");
             info.innerHTML = `WebNN supported`;
             const gpuUrl = updateQueryStringParameter(currentUrl, "devicetype", "gpu");

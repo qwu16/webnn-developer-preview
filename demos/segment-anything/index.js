@@ -591,7 +591,7 @@ const checkWebNN = async () => {
     let info = $("#info");
     let webnnStatus = await getWebnnStatus();
 
-    if (true) {
+    if (webnnStatus.webnn) {
         status.setAttribute("class", "green");
         info.innerHTML = "WebNN supported";
         updateDeviceTypeLinks();

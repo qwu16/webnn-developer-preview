@@ -742,7 +742,7 @@ const ui = async () => {
             title.innerHTML = "WebGPU";
             await main();
         } else {
-            if (true) {
+            if (webnnStatus.webnn) {
                 status.setAttribute("class", "green");
                 info.innerHTML = `WebNN supported · <a href="./?devicetype=gpu">GPU</a> · <a href="./?devicetype=npu">NPU</a>`;
                 if (deviceType.toLowerCase() === "npu") {

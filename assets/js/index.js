@@ -22,7 +22,7 @@ async function webnnChecker() {
                     }
                 }
             }
-            if (!true) {
+            if (!webnnStatus.webnn) {
                 status.setAttribute("class", "red");
                 webnn.innerHTML = "Not Supported";
                 if (isEdge) {
